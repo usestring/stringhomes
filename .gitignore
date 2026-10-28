@@ -1,0 +1,8 @@
+# Built by the refresh pipeline and uploaded by deploy.sh; never committed.
+public/index.html
+public/transit.json
+.wrangler/
+node_modules/
+wrangler.local.toml
+.claude/
+.mcp.json
