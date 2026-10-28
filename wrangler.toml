@@ -5,4 +5,4 @@ compatibility_date = "2026-09-01"
 [[d1_databases]]
 binding = "DB"
 database_name = "stringhomes"
-database_id = "REPLACE_AFTER_d1_create"
+database_id = "20c853c8-cde0-4384-979f-597e8c57a3bb"
