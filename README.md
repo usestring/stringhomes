@@ -37,3 +37,13 @@ openssl rand -hex 32 | wrangler pages secret put SENDER_SALT --project-name stri
 
 The pipeline gathers listings, rescores them, builds the page and runs `deploy.sh`.
 `pull_corrections.sh` prints new correction requests for review and marks them seen.
+
+The correction pull stops on Wrangler failures or unexpected results. Diagnostics include
+the failure category, command exit status, and numeric API code when available; raw error
+bodies are omitted because they can contain request details.
+
+Run the offline correction-pull fixtures without contacting D1:
+
+```sh
+python3 -I tests/test_pull_corrections.py -v
+```
